@@ -265,6 +265,7 @@ function App() {
     const resumePdfUrl = resumeFile;
 
     useEffect(() => {
+        
         document.documentElement.classList.toggle('dark', isDarkMode);
         localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
     }, [isDarkMode]);
@@ -354,7 +355,7 @@ const projects = [
         tech: "YOLOv5, Python, OpenCV", 
         desc: "Real-time object detection with alarm triggers for restricted zones.",
         image: images.surveillance, // Changed from placeholder
-        githubLink: "https://github.com/vivekmd9551" 
+        githubLink: "https://github.com/vivekmd9551/Smart-surveillance-System-using-object-detection-yolov5-" 
     },
     { 
         title: "Leave & Absence Management", 
@@ -368,14 +369,14 @@ const projects = [
         tech: "CNN, Python, OpenCV", 
         desc: "Classified traffic signs from images using deep learning.",
         image: images.traffic, // Changed from placeholder
-        githubLink: "https://github.com/vivekmd9551"
+        githubLink: "https://github.com/vivekmd9551/CSE-Project-Traffic-Sign-Recognition"
     },
     { 
         title: "Disaster Awareness Portal", 
         tech: "Django, SQLite", 
         desc: "Web platform for alerts and safety event info.",
         image: images.disaster, // Changed from placeholder
-        githubLink: "https://github.com/vivekmd9551"
+        githubLink: "https://github.com/vivekmd9551/CSE-Project-Disaster-Management-System-using-Django"
     },
     { 
         title: "Zoo Management System", 
