@@ -353,39 +353,38 @@ const projects = [
         title: "Smart Surveillance System", 
         tech: "YOLOv5, Python, OpenCV", 
         desc: "Real-time object detection with alarm triggers for restricted zones.",
-        image: images.surveillance, // Changed
-        githubLink: "https://github.com/vivekmd9551/Smart-surveillance-System-using-object-detection-yolov5-"
+        image: images.surveillance, // Changed from placeholder
+        githubLink: "https://github.com/vivekmd9551" 
     },
     { 
         title: "Leave & Absence Management", 
         tech: "React, Node.js, PostgreSQL", 
         desc: "Full-stack app with role-based login and automated leave tracking.",
-        image: images.leave, // Changed
+        image: images.leave, // Changed from placeholder
         githubLink: "https://github.com/vivekmd9551"
     },
     { 
         title: "Traffic Sign Detection", 
         tech: "CNN, Python, OpenCV", 
         desc: "Classified traffic signs from images using deep learning.",
-        image: images.traffic, // Changed
-        githubLink: "https://github.com/vivekmd9551/CSE-Project-Traffic-Sign-Recognition"
+        image: images.traffic, // Changed from placeholder
+        githubLink: "https://github.com/vivekmd9551"
     },
     { 
         title: "Disaster Awareness Portal", 
         tech: "Django, SQLite", 
         desc: "Web platform for alerts and safety event info.",
-        image: images.disaster, // Changed
-        githubLink: "https://github.com/vivekmd9551/CSE-Project-Disaster-Management-System-using-Django"
+        image: images.disaster, // Changed from placeholder
+        githubLink: "https://github.com/vivekmd9551"
     },
     { 
         title: "Zoo Management System", 
         tech: "PHP, MySQL", 
         desc: "Website for zoo data and ticket operations.",
-        image: images.zoo, // Changed
+        image: images.zoo, // Changed from placeholder
         githubLink: "https://github.com/vivekmd9551"
     },
 ];
-    
     return (
         <div className="relative">
             <FuturisticBackground isDarkMode={isDarkMode} />
@@ -438,7 +437,7 @@ const projects = [
                                 </div>
                             </div>
                             <div className="md:order-1 space-y-4 text-center md:text-left">
-                                <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">Hi, I'm <span className="text-blue-600 dark:text-blue-400">{personalInfo.name}</span></h1>
+                                <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-gray-900 dark:text-gray-100">Hi, I'm <span className="text-blue-600 dark:text-blue-400">{personalInfo.name}</span></h1>
                                 <h2 className="text-2xl sm:text-3xl font-semibold text-gray-700 dark:text-gray-300 h-10"><TypingAnimation roles={personalInfo.roles} /></h2>
                                 <p className="text-lg text-gray-600 dark:text-gray-400 max-w-xl mx-auto md:mx-0">{personalInfo.intro}</p>
                                 <div className="flex flex-wrap gap-4 pt-4 justify-center md:justify-start">
@@ -451,7 +450,7 @@ const projects = [
                     </section>
 
                     <section id="about" className="py-20">
-                        <h2 className="text-4xl font-bold text-center mb-16">My Journey</h2>
+                        <h2 className="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-gray-100">My Journey</h2>
                         <div className="relative container mx-auto px-6">
                             <div className="absolute left-4 md:left-1/2 h-full w-1 bg-blue-200 dark:bg-gray-700 transform md:-translate-x-1/2"></div>
                             {journeyItems.map((item, index) => (
@@ -460,7 +459,7 @@ const projects = [
                                         <div className="md:w-5/12">
                                             <div className={`p-6 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg border-l-4 md:border-l-0 ${index % 2 === 0 ? 'md:border-r-4' : 'md:border-l-4'} ${item.type === 'education' ? 'border-blue-500' : 'border-green-500'} transform hover:scale-105 transition-transform duration-300`}>
                                                 <p className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-1">{item.year}</p>
-                                                <h3 className="text-xl font-bold mb-2">{item.title || item.degree}</h3>
+                                                <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">{item.title || item.degree}</h3>
                                                 <p className="text-md text-gray-700 dark:text-gray-300 font-medium">{item.from || item.school}</p>
                                                 {item.score && <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">{item.score}</p>}
                                             </div>
@@ -476,7 +475,7 @@ const projects = [
                     </section>
 
                     <section id="skills" className="py-20 bg-gray-200/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl">
-                        <h2 className="text-4xl font-bold text-center mb-4">My Toolbox</h2>
+                        <h2 className="text-4xl font-bold text-center mb-4 text-gray-900 dark:text-gray-100">My Toolbox</h2>
                         <p className="text-center text-lg text-gray-600 dark:text-gray-400 mb-16">The technologies and tools I use to bring ideas to life.</p>
                         <div className="max-w-4xl mx-auto space-y-12">
                             {skillsData.map((skillGroup, index) => (
@@ -496,7 +495,7 @@ const projects = [
                     </section>
 
                     <section id="projects" className="py-20">
-                        <h2 className="text-4xl font-bold text-center mb-4">Featured Projects</h2>
+                        <h2 className="text-4xl font-bold text-center mb-4 text-gray-900 dark:text-gray-100">Featured Projects</h2>
                          <p className="text-center text-lg text-gray-600 dark:text-gray-400 mb-16">A selection of projects I'm proud of.</p>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {projects.map((project, index) => (
@@ -505,7 +504,7 @@ const projects = [
                                         <img src={project.image} alt={project.title} className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500" onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/600x400/1f2937/ffffff?text=Project'; }}/>
                                     </div>
                                     <div className="p-6 flex flex-col flex-grow">
-                                        <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                                        <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-gray-100">{project.title}</h3>
                                         <p className="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-3">{project.tech}</p>
                                         <p className="text-gray-600 dark:text-gray-400 flex-grow">{project.desc}</p>
                                          <div className="mt-6">
@@ -518,11 +517,11 @@ const projects = [
                     </section>
 
                     <section id="contact" ref={contactSectionRef} className={`py-20 transition-opacity duration-1000 ${isContactVisible ? 'opacity-100' : 'opacity-0'}`}>
-                        <h2 className="text-4xl font-bold text-center mb-4">Let's Connect</h2>
+                        <h2 className="text-4xl font-bold text-center mb-4 text-gray-900 dark:text-gray-100">Let's Connect</h2>
                         <p className="text-center text-lg text-gray-600 dark:text-gray-400 mb-16">Have a project in mind or just want to say hi? Feel free to reach out.</p>
                         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-8 rounded-2xl shadow-2xl">
                             <div className="space-y-6">
-                                <h3 className="text-2xl font-bold">Send me a message</h3>
+                                <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Send me a message</h3>
                                 <form action="#" method="POST" onSubmit={(e) => e.preventDefault()}>
                                     <div className="space-y-4">
                                         <div>
@@ -539,34 +538,33 @@ const projects = [
                                         </div>
                                         <div>
                                             <button type="submit" className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Send Message</button>
-                                            <p className="text-xs text-center mt-2 text-gray-500 dark:text-gray-400">Note: This form is for demonstration purposes.</p>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                             <div className="space-y-6">
-                                <h3 className="text-2xl font-bold">Contact Information</h3>
+                                <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Contact Information</h3>
                                  <div className="space-y-4">
                                     <a href={`mailto:${personalInfo.email}`} className="flex items-center gap-4 p-4 rounded-lg hover:bg-gray-200/50 dark:hover:bg-gray-700/50 transition-colors">
                                         <span className="text-blue-500"><MailIcon/></span>
                                         <div>
-                                            <p className="font-semibold text-lg">{personalInfo.email}</p>
+                                            <p className="font-semibold text-lg text-gray-900 dark:text-gray-100">{personalInfo.email}</p>
                                             <p className="text-sm text-gray-500 dark:text-gray-400">Email me anytime</p>
                                         </div>
                                     </a>
                                     <div className="flex items-center gap-4 p-4 rounded-lg hover:bg-gray-200/50 dark:hover:bg-gray-700/50 transition-colors">
                                         <span className="text-blue-500"><PhoneIcon/></span>
                                         <div>
-                                            <p className="font-semibold text-lg">{personalInfo.phone}</p>
+                                            <p className="font-semibold text-lg text-gray-900 dark:text-gray-100">{personalInfo.phone}</p>
                                             <p className="text-sm text-gray-500 dark:text-gray-400">Call me during business hours</p>
                                         </div>
                                     </div>
                                  </div>
                                  <div className="pt-4 border-t dark:border-gray-700">
-                                    <h4 className="text-lg font-semibold mb-4">Find me on Social Media</h4>
+                                    <h4 className="text-lg font-semibold mb-4 text-gray-900 dark:text-gray-100">Find me on Social Media</h4>
                                     <div className="flex gap-4">
-                                        <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-200 dark:bg-gray-600 rounded-full hover:bg-blue-600 text-white transition-all duration-300"><LinkedInIcon /></a>
-                                        <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-200 dark:bg-gray-600 rounded-full hover:bg-gray-800 text-white transition-all duration-300"><GitHubIcon /></a>
+                                        <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-200 dark:bg-gray-600 rounded-full text-gray-800 dark:text-gray-200 hover:bg-blue-600 hover:text-white transition-all duration-300"><LinkedInIcon /></a>
+                                        <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-200 dark:bg-gray-600 rounded-full text-gray-800 dark:text-gray-200 hover:bg-gray-800 hover:text-white transition-all duration-300"><GitHubIcon /></a>
                                     </div>
                                  </div>
                             </div>
@@ -578,12 +576,12 @@ const projects = [
                     <div className="container mx-auto py-8 px-6">
                         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                              <div className="text-center md:text-left">
-                                <h3 className="text-xl font-bold">{personalInfo.name}</h3>
+                                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">{personalInfo.name}</h3>
                                 <p className="text-sm text-gray-600 dark:text-gray-400">Creative Full-Stack Developer</p>
                             </div>
                             <div className="flex gap-6">
                                 {navLinks.map(link => (
-                                    <button key={link.id} onClick={() => scrollToSection(link.id)} className="font-semibold hover:text-blue-500 transition-colors">{link.title}</button>
+                                    <button key={link.id} onClick={() => scrollToSection(link.id)} className="font-semibold hover:text-blue-500 transition-colors text-gray-800 dark:text-gray-200">{link.title}</button>
                                 ))}
                             </div>
                              <div className="flex gap-4">
@@ -593,7 +591,7 @@ const projects = [
                         </div>
                         <div className="mt-8 border-t border-gray-300/50 dark:border-gray-700/50 pt-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500 dark:text-gray-400">
                             <p>&copy; {new Date().getFullYear()} {personalInfo.name}. All Rights Reserved.</p>
-                            <p>Made with React & Tailwind CSS</p>
+                            <button onClick={() => scrollToSection('home')} className="inline-flex items-center gap-2 hover:text-blue-500 transition-colors">Back to Top <ArrowUpIcon/></button>
                         </div>
                     </div>
                 </footer>
