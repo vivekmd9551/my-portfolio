@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.5eb51bb2.css",
-    "main.js": "/my-portfolio/static/js/main.f10c9ae5.js",
+    "main.js": "/my-portfolio/static/js/main.b3183854.js",
     "static/js/453.438d9e50.chunk.js": "/my-portfolio/static/js/453.438d9e50.chunk.js",
     "static/media/Profile.jpg": "/my-portfolio/static/media/Profile.9c1705451c253e65ff43.jpg",
     "static/media/VIVEK_MD_Resume.pdf": "/my-portfolio/static/media/VIVEK_MD_Resume.7bebcd9b2fa97e271fcb.pdf",
@@ -12,11 +12,11 @@
     "static/media/traffic sign.jpg": "/my-portfolio/static/media/traffic sign.abab5df4cd14a78db6d5.jpg",
     "index.html": "/my-portfolio/index.html",
     "main.5eb51bb2.css.map": "/my-portfolio/static/css/main.5eb51bb2.css.map",
-    "main.f10c9ae5.js.map": "/my-portfolio/static/js/main.f10c9ae5.js.map",
+    "main.b3183854.js.map": "/my-portfolio/static/js/main.b3183854.js.map",
     "453.438d9e50.chunk.js.map": "/my-portfolio/static/js/453.438d9e50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5eb51bb2.css",
-    "static/js/main.f10c9ae5.js"
+    "static/js/main.b3183854.js"
   ]
 }
