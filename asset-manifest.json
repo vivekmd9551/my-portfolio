@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.12996baa.css",
-    "main.js": "/my-portfolio/static/js/main.f0f6f426.js",
+    "main.css": "/my-portfolio/static/css/main.5eb51bb2.css",
+    "main.js": "/my-portfolio/static/js/main.f10c9ae5.js",
     "static/js/453.438d9e50.chunk.js": "/my-portfolio/static/js/453.438d9e50.chunk.js",
     "static/media/Profile.jpg": "/my-portfolio/static/media/Profile.9c1705451c253e65ff43.jpg",
+    "static/media/VIVEK_MD_Resume.pdf": "/my-portfolio/static/media/VIVEK_MD_Resume.7bebcd9b2fa97e271fcb.pdf",
     "static/media/zoo.jpg": "/my-portfolio/static/media/zoo.6ccfba8d4854bbdb0502.jpg",
     "static/media/Leavemanagement.png": "/my-portfolio/static/media/Leavemanagement.a8b1ed72331b6cee973d.png",
-    "static/media/VIVEK_MD_Resume.pdf": "/my-portfolio/static/media/VIVEK_MD_Resume.170442a6bd698d9ee0ab.pdf",
     "static/media/disaster management.jpg": "/my-portfolio/static/media/disaster management.f071f8d13ddd1d6cf136.jpg",
     "static/media/smart surv.jpg": "/my-portfolio/static/media/smart surv.15e0b0b9f05faedd2dde.jpg",
     "static/media/traffic sign.jpg": "/my-portfolio/static/media/traffic sign.abab5df4cd14a78db6d5.jpg",
     "index.html": "/my-portfolio/index.html",
-    "main.12996baa.css.map": "/my-portfolio/static/css/main.12996baa.css.map",
-    "main.f0f6f426.js.map": "/my-portfolio/static/js/main.f0f6f426.js.map",
+    "main.5eb51bb2.css.map": "/my-portfolio/static/css/main.5eb51bb2.css.map",
+    "main.f10c9ae5.js.map": "/my-portfolio/static/js/main.f10c9ae5.js.map",
     "453.438d9e50.chunk.js.map": "/my-portfolio/static/js/453.438d9e50.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12996baa.css",
-    "static/js/main.f0f6f426.js"
+    "static/css/main.5eb51bb2.css",
+    "static/js/main.f10c9ae5.js"
   ]
 }
